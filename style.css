@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 8px;
+}
+/*.body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto ;
+    gap: 0px;
+}*/
+.header-container{
+    background-color: rgb(195, 236, 10);
+    position: sticky;
+    width: 100%;
+    height: 30px;
+    top: 5px;
+    }
+.ul-header{
+    font-size: large;
+    list-style: none;
+    display: flex;
+    justify-content: space-between ;
+    object-fit: cover;
+    align-items: center;
+}
+.header-section-container{
+    height: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    }
+.titulo{
+    color: black;
+    font-style: italic;
+    font-size: 50px;
+}
+.section-novedades{
+    color: rgb(0, 55, 255);
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    }
+.section-container ol{
+    font-size: x-large;
+    }
+.section-registro{
+        color: rgb(0, 55, 255);
+        background-color: #00ffea;
+        /*display: flex;*/
+        /*justify-content: center;*/
+    }
+
+.logo{
+    color: yellow;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    object-fit: contain;
+}
+
+.section-main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-area: "video parrafo marcas marcas";
+    background-color: none;
+}
+
+.video{
+    grid-area: "video";
+    grid-column-start: span 3;
+    width:100%;
+    height: 100%;
+}
+
+.parrafo{
+    grid-area: "parrafo";
+    order: 2;
+    font-size: 100px;    
+    text-align: center;
+    width: min-content;
+    height: auto;
+}
+
+.footer{
+    grid-column-start: span 3;
+    grid-row-start: auto;
+    width: 100%;
+    height: 150px;
+    background-color: yellow;
+    align-items: center;
+}
+
+ .logo-footer{
+     padding: 2px;
+     display: flex;
+     list-style: none;
+     justify-items: space-between;
+     position:absolute;
+ }
+.marcas{
+    grid-area: "marcas";
+    width: 100%;
+    height: 100%;
+    /*object-fit: scale-down;*/
+    }
+.marca-img{
+    width: 20%;
+}   
+
+ .novedades{
+     list-style: none;
+     font-size: 50px;
+     font-style: arial black;
+     display: flex;
+     justify-content: space-between;
+     
+ }
+
+ .vinos{
+     width: 50%;
+     height: 50%;
+ }
