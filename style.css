@@ -1,18 +1,14 @@
 *{
     padding: 0px;
-    margin: 8px;
+    margin: 5px;
 }
-/*.body{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto ;
-    gap: 0px;
-}*/
+
+/*titulo permanente de menu de todas las paginas*/
 .header-container{
     background-color: rgb(195, 236, 10);
     position: sticky;
     width: 100%;
-    height: 30px;
+    height: 35px;
     top: 5px;
     }
 .ul-header{
@@ -23,101 +19,237 @@
     object-fit: cover;
     align-items: center;
 }
-.header-section-container{
-    height: 100%;
-    background-color: yellow;
-    display: flex;
-    justify-content: space-between;
-    }
-.titulo{
-    color: black;
-    font-style: italic;
-    font-size: 50px;
-}
-.section-novedades{
-    color: rgb(0, 55, 255);
-    background-color: yellow;
-    display: flex;
-    justify-content: center;
-    }
-.section-container ol{
-    font-size: x-large;
-    }
-.section-registro{
-        color: rgb(0, 55, 255);
-        background-color: #00ffea;
-        /*display: flex;*/
-        /*justify-content: center;*/
-    }
-
-.logo{
-    color: yellow;
-    align-items: center;
-    width: fit-content;
-    height: fit-content;
-    object-fit: contain;
-}
-
-.section-main{
+/* empieza el grid ce contenido de la pagina index*/
+.container {  
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-area: "video parrafo marcas marcas";
-    background-color: none;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 100px 400px;
+    gap: 0px;
+    grid-template-areas:
+      "LOGO TITULO TITULO TITULO"
+      "VIDEO PARRAFO MARCAS MARCAS";
+    background-color: #00ffea;
 }
-
-.video{
-    grid-area: "video";
-    grid-column-start: span 3;
-    width:100%;
-    height: 100%;
-}
-
-.parrafo{
-    grid-area: "parrafo";
-    order: 2;
-    font-size: 100px;    
-    text-align: center;
-    width: min-content;
-    height: auto;
-}
-
-.footer{
-    grid-column-start: span 3;
-    grid-row-start: auto;
-    width: 100%;
-    height: 150px;
+.LOGO { grid-area: LOGO; 
     background-color: yellow;
+    height: 80%;
+}
+
+.LOGO img{
+    width: auto;
+    height: 85%;
+}
+.TITULO { grid-area: TITULO;
+    background-color: yellow;
+    height: 80%;
+}
+.TITULO p{
+    text-align: center;
+    align-items: center;
+    font-size: 60px;
+    font-style: italic;
+}
+.VIDEO { grid-area: "VIDEO";    
+}
+.VIDEO video{
+    width: 50%;
+    height: 80%;
     align-items: center;
 }
-
- .logo-footer{
-     padding: 2px;
-     display: flex;
-     list-style: none;
-     justify-items: space-between;
-     position:absolute;
+.PARRAFO { grid-area: "PARRAFO";
+    font-style: oblique;
  }
-.marcas{
-    grid-area: "marcas";
-    width: 100%;
+.PARRAFO p{
+     align-items: center;
+     border-radius: 1px;
+     border-color: blue;
+     font-size: 20px;
+     height: 60%;
+ }
+.MARCAS { grid-area: MARCAS;
+}
+.MARCAS img{
+    align-items: initial;
+    height: 60%;
+    width: 60%;
+}
+.footer {
+    list-style: none;
+    background-color: yellow;
+    display: flex;
+    justify-content: right;
+    height: 70px;
+}
+.redes{
+    list-style: none;
+    display: flex;
+}
+.redes img{
+    width: 40%;
+    height: 60%;
+}
+/*PAGINA REGISTRO .HTML*/
+.container-registro {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 400px;
+    gap: 0px;
+    grid-template-areas:
+      "LOGO TITULO"
+      "REGISTRO MARCAS";
+    background-color: #a1e96a;
+}
+.section-registro{
+    grid-area: "REGISTRO";
+    color: rgb(0, 55, 255);
+    background-color: #00ffea;
+    justify-content: center;
+}
+
+/*main de la pagina novedasdes.html*/
+.section-container-novedades{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 300px;
+    gap: 0px;
+    grid-template-areas:
+      "LOGO1 TEXTO"
+      "VINOS TEXTO";
+    background-color: #a1e96a;
+}
+.LOGO1 {
+    grid-area: "LOGO1"; 
+    background-color: yellow;
+    height: 80%;
+}
+.LOGO1 img{
+    width: auto;
+    height: 85%;
+}
+.TEXTO { 
+    grid-area: "TITULO";
+    background-color: yellow;
+    height: 80%;
+}
+.TEXTO p{
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-style: italic;
+}
+.vinos{
+    grid-area: "VINOS";
+}
+.vinos img{
+    width: auto;
     height: 100%;
-    /*object-fit: scale-down;*/
+} 
+/*manejamos MARCAS.HTML*/
+.container-marca{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 150px 300px;
+    gap: 0px;
+    grid-template-areas:
+      "LOGO2 TEXTO2"
+      "MARCAS2 MARCAS2";
+    background-color: #a1e96a;
+}
+.LOGO2 {
+    grid-area: "LOGO2"; 
+    background-color: yellow;
+    height: 80%;
+}
+.LOGO2 img{
+    width: auto;
+    height: 85%;
+}
+.TEXTO2 { 
+    grid-area: "TEXTO2";
+    background-color: yellow;
+    height: 80%;
+}
+.TEXTO2 p{
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-style: italic;
+}
+.MARCAS2 { 
+    grid-area: "MARCAS2";
+    justify-content: center;
+}
+.MARCAS2 img{
+    align-items: center;
+    justify-items: center;
+    height: 50%;
+    width: 50%;
+}
+
+/*Aplico el Responsive*/
+ @media only screen and (max-width: 767px){
+    .container{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: 100px 100px 80px;
+    gap: 0px;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "LOGO TITULO"
+      "VIDEO PARRAFO"
+       "MARCAS";
+    background-color: #d9ff00;
     }
-.marca-img{
-    width: 20%;
-}   
-
- .novedades{
-     list-style: none;
-     font-size: 50px;
-     font-style: arial black;
-     display: flex;
-     justify-content: space-between;
-     
+    .LOGO { grid-area: "LOGO"; 
+        background-color: yellow;
+        height: 30%;
+    }
+    .LOGO img{
+        width: auto;
+        height: 80%;
+    }
+    .TITULO{
+        grid-area: "TITULO";
+        background-color: yellow;
+        height: 30%;
+    }
+    .TITULO p{
+        font-size: 15px;
+    }
+    .PARRAFO { grid-area: "PARRAFO";
+        font-style: oblique;
+        text-size-adjust: auto;
+     }
+    .PARRAFO p{
+         align-content: center;
+         text-size-adjust: auto;
+     }
+    .MARCAS img{
+        height: 60%;
+        width: 60%;
+    }
+    .footer {
+        background-color: rgb(200, 255, 0);
+        height: 30px;
+    }
+    
+    .redes img{
+        width: 40%;
+        height: 40%;
+        justify-content: right;
+    }
  }
-
- .vinos{
-     width: 50%;
-     height: 50%;
- }
+ @media only screen and (min-width: 768px){
+    .container{
+        grid-template-columns: 0.5fr 0.8fr 1fr 1fr;
+    }
+    .TITULO p{
+        font-size: 40px;
+    }
+}
+ @media only screen and (min-width: 1024px){
+    .container{
+        grid-template-columns: 1fr 0.8fr 1.5fr 1.5fr;
+        
+    }
+}
