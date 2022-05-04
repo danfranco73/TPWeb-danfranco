@@ -2,7 +2,10 @@
     padding: 0px;
     margin: 5px;
 }
-
+/*#grad {
+    background-image: linear-gradient(red, yellow);
+   }*/
+   
 /*titulo permanente de menu de todas las paginas*/
 .header-container{
     background-color: rgb(195, 236, 10);
@@ -10,7 +13,12 @@
     width: 100%;
     height: 35px;
     top: 5px;
+    transition: all 2s;
     }
+.header-container:focus {
+    width: 200px;
+   font-size: 24px;
+}
 .ul-header{
     font-size: large;
     list-style: none;
@@ -30,7 +38,9 @@
       "VIDEO PARRAFO MARCAS MARCAS";
     background-color: #00ffea;
 }
-.LOGO { grid-area: LOGO; 
+.LOGO { 
+    grid-area: LOGO;
+    /*transform: skewY(25deg);*/ 
     background-color: yellow;
     height: 80%;
 }
@@ -38,6 +48,7 @@
 .LOGO img{
     width: auto;
     height: 85%;
+    
 }
 .TITULO { grid-area: TITULO;
     background-color: yellow;
@@ -48,7 +59,19 @@
     align-items: center;
     font-size: 60px;
     font-style: italic;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 5;
 }
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
 .VIDEO { grid-area: "VIDEO";    
 }
 .VIDEO video{
@@ -56,26 +79,45 @@
     height: 80%;
     align-items: center;
 }
-.PARRAFO { grid-area: "PARRAFO";
+.PARRAFO { 
+    grid-area: "PARRAFO";
     font-style: oblique;
+    transition: height 2s;
  }
+ .PARRAFO:hover {
+    height: 200px;
+ }
+ 
 .PARRAFO p{
      align-items: center;
      border-radius: 1px;
      border-color: blue;
      font-size: 20px;
      height: 60%;
+    
  }
-.MARCAS { grid-area: MARCAS;
+ .PARRAFO p:hover {
+    height: 200px;
+ }
+.MARCAS { 
+    grid-area: MARCAS;
+   
 }
 .MARCAS img{
     align-items: initial;
-    height: 60%;
+    height: 80%;
     width: 60%;
+    transition: height 2s, width 1s;
 }
+.MARCAS img:hover {
+    height: 90%;
+    width: 75%;
+
+ }
 .footer {
     list-style: none;
     background-color: yellow;
+    background-image: linear-gradient(to left green yellow);
     display: flex;
     justify-content: right;
     height: 70px;
@@ -85,6 +127,7 @@
     display: flex;
 }
 .redes img{
+    transform: translate(10px, 20x);
     width: 40%;
     height: 60%;
 }
