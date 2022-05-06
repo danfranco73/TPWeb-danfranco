@@ -6,14 +6,14 @@
 .header-container{
     background-color: rgb(195, 236, 10);
     position: sticky;
-    width: 100%;
+    width: auto;
     height: 35px;
     top: 5px;
     transition: all 2s;
     }
 .header-container:focus {
-    width: 200px;
-   font-size: 24px;
+    width: 150px;
+    font-size: 24px;
 }
 .ul-header{
     font-size: large;
@@ -23,44 +23,26 @@
     object-fit: cover;
     align-items: center;
 }
-/* empieza el grid ce contenido de la pagina index*/
-/*
-.container {  
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 100px 400px;
-    gap: 0px;
-    grid-template-areas:
-      "LOGO TITULO TITULO TITULO"
-      "VIDEO PARRAFO MARCAS MARCAS";
-    background-color: #00ffea;
-}*/
-
 .LOGO { 
-    grid-area: LOGO;
     background-color: yellow;
     height: 100px;
 }
-
 .LOGO img{
     width: auto;
     height: 85%;
     justify-items: flex-start;
-    
 }
 .TITULO { 
-    grid-area: TITULO;
     background-color: yellow;
     height: 100px;
 }
 .TITULO p{
     text-align: center;
     align-items: center;
-    /*font-size: calc(50%);*/
     font-style: italic;
     animation-duration: 2s;
     animation-name: aparecer;
-    animation-iteration-count: 5;
+    animation-iteration-count: 8;
 }
 @keyframes aparecer {
     0% {opacity: 0;}
@@ -75,12 +57,8 @@
     align-items: center;
 }
 .PARRAFO { 
-    grid-area: "PARRAFO";
     font-style: oblique;
     transition: height 2s;
- }
- .PARRAFO:hover {
-    height: 200px;
  }
 .PARRAFO p{
      align-items: center;
@@ -92,10 +70,6 @@
  .PARRAFO p:hover {
     height: 200px;
  }
-.MARCAS { 
-    grid-area: MARCAS;
-   
-}
 .MARCAS img{
     align-items: initial;
     height: 80%;
@@ -105,7 +79,6 @@
 .MARCAS img:hover {
     height: 90%;
     width: 75%;
-
  }
 .footer {
     list-style: none;
@@ -114,6 +87,7 @@
     display: flex;
     justify-content: right;
     height: 70px;
+    width: auto;
 }
 .redes{
     list-style: none;
@@ -124,82 +98,9 @@
     width: 40%;
     height: 60%;
 }
-/*PAGINA REGISTRO .HTML*/
-.LOGO-1 img{
-    width: auto;
-    height: 85%;
-    justify-items: flex-start;
-    
-}
-.TITULO-1 { 
-    grid-area: TITULO;
-    background-color: yellow;
-    height: 100px;
-}
-.TITULO-1 p{
-    text-align: center;
-    align-items: center;
-    /*font-size: calc(50%);*/
-    font-style: italic;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: 5;
-}
-/*.container-registro {  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 400px;
-    gap: 0px;
-    grid-template-areas:
-      "LOGO TITULO"
-      "REGISTRO MARCAS";
-    background-color: #a1e96a;
-}*/
-/*.section-registro{
-    grid-area: "REGISTRO";
-    color: rgb(0, 55, 255);
-    background-color: #00ffea;
-    justify-content: center;
-    align-items: center;
-}*/
-
-/*main de la pagina novedasdes.html*/
-.section-container-novedades{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 300px;
-    gap: 0px;
-    grid-template-areas:
-      "LOGO1 TEXTO"
-      "VINOS TEXTO";
-    background-color: #a1e96a;
-}
-.LOGO1 {
-    grid-area: "LOGO1"; 
-    background-color: yellow;
-    height: 80%;
-}
-.LOGO1 img{
-    width: auto;
-    height: 85%;
-}
-.TEXTO { 
-    grid-area: "TITULO";
-    background-color: yellow;
-    height: 80%;
-}
-.TEXTO p{
-    text-align: center;
-    align-items: center;
-    font-size: 40px;
-    font-style: italic;
-}
-.vinos{
-    grid-area: "VINOS";
-}
 .vinos img{
-    width: auto;
-    height: 100%;
+    width: 50%;
+    height: 65%;
 } 
 /*manejamos MARCAS.HTML*/
 .container-marca{
@@ -211,26 +112,6 @@
       "LOGO2 TEXTO2"
       "MARCAS2 MARCAS2";
     background-color: #a1e96a;
-}
-.LOGO2 {
-    grid-area: "LOGO2"; 
-    background-color: yellow;
-    height: 80%;
-}
-.LOGO2 img{
-    width: auto;
-    height: 85%;
-}
-.TEXTO2 { 
-    grid-area: "TEXTO2";
-    background-color: yellow;
-    height: 80%;
-}
-.TEXTO2 p{
-    text-align: center;
-    align-items: center;
-    font-size: 40px;
-    font-style: italic;
 }
 .MARCAS2 { 
     grid-area: "MARCAS2";
@@ -245,18 +126,6 @@
 
 /*Aplico el Responsive*/
  @media only screen and (max-width: 767px){
-    /*.container{
-    display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    grid-template-rows: 100px 100px 80px;
-    gap: 0px;
-    grid-auto-rows: auto;
-    grid-template-areas:
-      "LOGO TITULO"
-      "VIDEO PARRAFO"
-       "MARCAS";
-    background-color: #d9ff00;
-    }*/
     .LOGO { 
         background-color: yellow;
         height: 50px;
@@ -303,16 +172,9 @@
     }
  }
  @media only screen and (min-width: 768px){
-    /*.container{
-        grid-template-columns: 0.5fr 0.8fr 1fr 1fr;
-    }*/
     .TITULO p{
         font-size: 30px;
     }
 }
  @media only screen and (min-width: 1024px){
-   /* .container{
-        grid-template-columns: 1fr 0.8fr 1.5fr 1.5fr;
-        
-    }*/
 }
