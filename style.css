@@ -2,10 +2,6 @@
     padding: 0px;
     margin: 5px;
 }
-/*#grad {
-    background-image: linear-gradient(red, yellow);
-   }*/
-   
 /*titulo permanente de menu de todas las paginas*/
 .header-container{
     background-color: rgb(195, 236, 10);
@@ -28,6 +24,7 @@
     align-items: center;
 }
 /* empieza el grid ce contenido de la pagina index*/
+/*
 .container {  
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -37,42 +34,40 @@
       "LOGO TITULO TITULO TITULO"
       "VIDEO PARRAFO MARCAS MARCAS";
     background-color: #00ffea;
-}
+}*/
+
 .LOGO { 
     grid-area: LOGO;
-    /*transform: skewY(25deg);*/ 
     background-color: yellow;
-    height: 80%;
+    height: 100px;
 }
 
 .LOGO img{
     width: auto;
     height: 85%;
+    justify-items: flex-start;
     
 }
-.TITULO { grid-area: TITULO;
+.TITULO { 
+    grid-area: TITULO;
     background-color: yellow;
-    height: 80%;
+    height: 100px;
 }
 .TITULO p{
     text-align: center;
     align-items: center;
-    font-size: 60px;
+    /*font-size: calc(50%);*/
     font-style: italic;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: 5;
 }
 @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    0% {opacity: 0;}
+    100% {opacity: 1;}
  }
- 
-.VIDEO { grid-area: "VIDEO";    
+.VIDEO { grid-area: "VIDEO"; 
+    justify-content: center;   
 }
 .VIDEO video{
     width: 50%;
@@ -87,14 +82,12 @@
  .PARRAFO:hover {
     height: 200px;
  }
- 
 .PARRAFO p{
      align-items: center;
      border-radius: 1px;
      border-color: blue;
      font-size: 20px;
      height: 60%;
-    
  }
  .PARRAFO p:hover {
     height: 200px;
@@ -132,7 +125,27 @@
     height: 60%;
 }
 /*PAGINA REGISTRO .HTML*/
-.container-registro {  
+.LOGO-1 img{
+    width: auto;
+    height: 85%;
+    justify-items: flex-start;
+    
+}
+.TITULO-1 { 
+    grid-area: TITULO;
+    background-color: yellow;
+    height: 100px;
+}
+.TITULO-1 p{
+    text-align: center;
+    align-items: center;
+    /*font-size: calc(50%);*/
+    font-style: italic;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 5;
+}
+/*.container-registro {  
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 400px;
@@ -141,13 +154,14 @@
       "LOGO TITULO"
       "REGISTRO MARCAS";
     background-color: #a1e96a;
-}
-.section-registro{
+}*/
+/*.section-registro{
     grid-area: "REGISTRO";
     color: rgb(0, 55, 255);
     background-color: #00ffea;
     justify-content: center;
-}
+    align-items: center;
+}*/
 
 /*main de la pagina novedasdes.html*/
 .section-container-novedades{
@@ -231,7 +245,7 @@
 
 /*Aplico el Responsive*/
  @media only screen and (max-width: 767px){
-    .container{
+    /*.container{
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     grid-template-rows: 100px 100px 80px;
@@ -242,22 +256,28 @@
       "VIDEO PARRAFO"
        "MARCAS";
     background-color: #d9ff00;
-    }
-    .LOGO { grid-area: "LOGO"; 
+    }*/
+    .LOGO { 
         background-color: yellow;
-        height: 30%;
+        height: 50px;
     }
     .LOGO img{
         width: auto;
         height: 80%;
+        justify-items: center ;
+        justify-content: center;
     }
     .TITULO{
         grid-area: "TITULO";
         background-color: yellow;
-        height: 30%;
+        height: 50px;
     }
     .TITULO p{
         font-size: 15px;
+    }
+    .VIDEO{
+        width: 60%;
+        height: 50%;
     }
     .PARRAFO { grid-area: "PARRAFO";
         font-style: oblique;
@@ -273,26 +293,26 @@
     }
     .footer {
         background-color: rgb(200, 255, 0);
-        height: 30px;
+        height: 40px;
     }
     
     .redes img{
-        width: 40%;
-        height: 40%;
+        width: 30%;
+        height: 30%;
         justify-content: right;
     }
  }
  @media only screen and (min-width: 768px){
-    .container{
+    /*.container{
         grid-template-columns: 0.5fr 0.8fr 1fr 1fr;
-    }
+    }*/
     .TITULO p{
-        font-size: 40px;
+        font-size: 30px;
     }
 }
  @media only screen and (min-width: 1024px){
-    .container{
+   /* .container{
         grid-template-columns: 1fr 0.8fr 1.5fr 1.5fr;
         
-    }
+    }*/
 }

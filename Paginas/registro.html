@@ -21,24 +21,39 @@
                 </ul>
             </nav>
         </header>    
-<!--Aqui iria un formulario de registro como se indica en el Mainframe-->
-        <main class="container-registro">
-            <div class="LOGO">
-               <img src="../Imagenes/LogoTP-3.jpg" alt="LogoTP">
+        <main class="container-fluid text-black border">
+            <div class="row">
+                <div class="col-sm-2 LOGO-1">
+                    <img src="Imagenes/LogoTP-3.jpg" alt="LogoTP">
+                </div>
+                <div class="col-sm-9 TITULO-1">
+                    <p>"Mayorista de Alimentos y Bebidas"</p>
+                </div>
             </div>
-            <div class="TITULO">
-                <p>"Mayorista de Alimentos y Bebidas"</p>
+            <div class="row">
+                <div class="col-sm-3">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="NOMBRE">Nombre del Negocio:</label>
+                            <input type="NOMBRE" class="form-control" id="NOMBRE" placeholder="Ingrese Nombre del Negocio" name="NOMBRE">
+                            <label for="DIRECCION">Dirección:</label>
+                            <input type="DIRECCION" class="form-control" id="DIRECCION" placeholder="Ingrese Dirección" name="DIRECCION">
+                            <label for="TELEFONO">Teléfono:</label>
+                            <input type="TELEFONO" class="form-control" id="TELEFONO" placeholder="Ingrese Teléfono de contacto" name="TELEFONO">
+                            <label for="CONTACTO">Contacto:</label>
+                            <input type="CONTACTO" class="form-control" id="CONTACTO" placeholder="Ingrese Nombre del Contacto" name="CONTACTO">
+                            <label for="CUIT">CUIT:</label>
+                            <input type="CUIT" class="form-control" id="CUIT" placeholder="DNI/CUIT del Negocio" name="CUIT">
+                        </div>
+                        <button type="submit" class="btn btn-success">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+                <div class="col-sm-9 MARCAS">
+                    <a href="../Paginas/marcas.html"target="_blanck"><img src="../imagenes/marcas.jpg" alt=""></a>
+                </div>
             </div>
-            <div class="section-registro">    
-                <div>REGISTRACION</div>
-                <div>NOMBRE DEL NEGOCIO</div>
-                <div>DIRECCION</div>
-                <div>TEL DE CONTACTO</div>
-                <div>NOMBRE COMPLETO DEL TITULAR</div>
-            </div>
-            <div class="MARCAS">
-                <a href="../Paginas/marcas.html"target="_blanck"><img src="../imagenes/marcas.jpg" alt=""></a>
-            </div>    
         </main>    
 <!--Footer de la pagina-->
         <footer class="footer" id="final">
