@@ -1,0 +1,107 @@
+/*main logo  + titulo */
+main{
+    div{
+        div{
+            img{
+                width: auto;
+                height: 85%;
+                justify-items: flex-start;
+            }
+        }
+    div{
+        div{
+            background-color: yellow;
+            height: 100px;
+            width: 80%;
+            animation-name: titulo;
+            animation-duration: 4s;
+            @keyframes titulo {
+                0% {background-color: red}
+                25%{background-color: green;}
+                50%{background-color: blue;}
+                100%{background-color: yellow;}
+                
+            }
+            p{
+                text-align: center;
+                align-items: center;
+                font-style: italic;
+                animation-name: aparecer;
+                animation-duration: 2s;
+                animation-iteration-count: 8;
+                @keyframes aparecer {
+                    0%{opacity: 0;}
+                    50%{opacity: 0.5;}
+                    100%{opacity: 1;}
+                }
+            }
+        }
+    }
+    }
+}
+.LOGO { 
+    background-color: yellow;
+    height: 100px;
+}
+.LOGO img{
+    width: auto;
+    height: 85%;
+    justify-items: flex-start;
+}
+.TITULO { 
+    background-color: yellow;
+    height: 100px;
+    width: 80%;
+    animation-name: titulo;
+    animation-duration: 4s;
+}
+@keyframes titulo {
+    0%   {background-color: red;}
+    25%  {background-color: green;}
+    50%  {background-color: blue;}
+    100% {background-color: yellow;}
+}
+.TITULO p{
+    text-align: center;
+    align-items: center;
+    font-style: italic;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 8;
+}
+@keyframes aparecer {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ .VIDEO { grid-area: "VIDEO"; 
+    justify-content: center;   
+}
+.VIDEO video{
+    width: 50%;
+    height: 80%;
+    align-items: center;
+}
+.PARRAFO { 
+    font-style: oblique;
+    transition: height 2s;
+ }
+.PARRAFO p{
+     align-items: center;
+     border-radius: 1px;
+     border-color: blue;
+     font-size: 20px;
+     height: 60%;
+ }
+.PARRAFO p:hover {
+    height: 200px;
+ }
+.MARCAS img{
+    align-items: initial;
+    height: 80%;
+    width: 60%;
+    transition: height 2s, width 1s;
+}
+.MARCAS img:hover {
+    height: 90%;
+    width: 75%;
+ }

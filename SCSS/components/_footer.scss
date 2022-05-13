@@ -1,0 +1,23 @@
+footer{
+    list-style: none;
+    background-color: yellow;
+    background-image: linear-gradient(to left green yellow);
+    display: flex;
+    justify-content: right;
+    height: 70px;
+    width: 95%;
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                img{
+                    transform: translate(10px, 20px);
+                    width: 40%;
+                    height: 60%;
+                }
+
+            }
+        }
+    }
+}
