@@ -1,10 +1,11 @@
 /*header*/
+@import '../base/mapas';
 
 header{
-    background-color: yellow;
+    background-color: map-get($estilos, background-color);
     position: sticky;
     width: auto;
-    height: 35px;
+    height: 45px;
     top: 5px;
     transition: all 2s;
     &:focus{
@@ -15,8 +16,8 @@ header{
         ul{
             font-size: large;
             font-weight: bolder;
-            list-style: none;
-            display: flex;
+            list-style: map-get($estilos, list-style);
+            display: map-get($estilos, display);
             justify-content: space-between;
             object-fit: cover;
             align-items: center;
@@ -24,9 +25,10 @@ header{
                 img{transform: translate(10px, 20x);
                     width: 40%;
                     height: 60%;
-
+                    position: "float";
                 }
             }
+            
         }
     }
 }

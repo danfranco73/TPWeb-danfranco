@@ -1,0 +1,22 @@
+
+
+$redes: ( /*Declaramos nuestro mapa*/
+        facebook:  #3a5795,
+        send-mail: #C25E30
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+   }
+}
+$estilos:(
+    background-color: yellow,
+    width:150px,
+    font-size: 24px,
+    height: 45px,
+    list-style: none,
+    display: flex,
+    
+
+)

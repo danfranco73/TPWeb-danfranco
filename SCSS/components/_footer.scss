@@ -1,11 +1,12 @@
+@import '../base/mixin';
+
 footer{
-    list-style: none;
-    background-color: yellow;
+    list-style: map-get($estilos, list-style);
+    background-color: map-get($estilos, background-color );
     background-image: linear-gradient(to left green yellow);
     display: flex;
     justify-content: right;
-    height: 70px;
-    width: 95%;
+    @include sizes(auto, 75px);
     nav{
         ul{
             list-style: none;
