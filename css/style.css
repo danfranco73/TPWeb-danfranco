@@ -1,208 +1,196 @@
 /*nesting o anidamiento*/
 /*header*/
-/*Creamos el bucle para usar los valores del mapa*/
-.btn--facebook {
-  background-color: #3a5795;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.btn--send-mail {
-  background-color: #C25E30;
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-header {
-  background-color: yellow;
+body div header {
+  height: 90px;
+  background-color: black;
+  border-radius: 10px;
+}
+body div header h1 {
+  background-color: black;
+  width: 100%;
+  font-style: arial;
+  text-indent: 25%;
+  color: white;
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: 8;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body div header div {
   position: sticky;
+}
+body div header div nav {
+  display: flex;
   width: auto;
-  height: 45px;
-  top: 5px;
-  transition: all 2s;
+  height: 50px;
 }
-header:focus {
-  width: 150px;
-  font-size: 24px;
+body div header div nav div img {
+  object-fit: contain;
+  width: 30%;
+  height: auto;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 50px;
 }
-header nav ul {
-  font-size: large;
-  font-weight: bolder;
-  list-style: none;
+body div header div nav div ul {
   display: flex;
   justify-content: space-between;
-  object-fit: cover;
+  list-style: none;
   align-items: center;
 }
-header nav ul li img {
-  transform: translate(10px, 20x);
-  width: 40%;
-  height: 60%;
-  position: "float";
-}
-
-/*main logo  + titulo */
-main div div img {
-  width: auto;
-  height: 85%;
-  justify-items: flex-start;
-}
-main div div div {
-  background-color: yellow;
-  height: 100px;
-  width: 80%;
-  animation-name: titulo;
-  animation-duration: 4s;
-}
-@keyframes titulo {
-  0% {
-    background-color: red;
-  }
-  25% {
-    background-color: green;
-  }
-  50% {
-    background-color: blue;
-  }
-  100% {
-    background-color: yellow;
-  }
-}
-main div div div p {
+body div header div nav div ul li a {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 1.5px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  font-style: italic;
-  animation-name: aparecer;
-  animation-duration: 2s;
-  animation-iteration-count: 8;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-weight: bolder;
 }
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+body div header div nav div ul li a img {
+  width: 20%;
+  height: 20%;
 }
 
-.LOGO {
-  background-color: yellow;
-  height: 100px;
+main {
+  /*main del proyecto*/
+  background-color: black;
+  margin-top: 100px;
+  padding: 20px 5px 10px 5px;
+  /*Titulo del Principal*/
+  /*contenido principal*/
 }
-
-.LOGO img {
-  width: auto;
-  height: 85%;
-  justify-items: flex-start;
-}
-
-.TITULO {
-  background-color: yellow;
-  height: 100px;
-  width: 80%;
-  animation-name: titulo;
-  animation-duration: 4s;
-}
-
-@keyframes titulo {
-  0% {
-    background-color: red;
-  }
-  25% {
-    background-color: green;
-  }
-  50% {
-    background-color: blue;
-  }
-  100% {
-    background-color: yellow;
-  }
-}
-.TITULO p {
-  text-align: center;
-  align-items: center;
-  font-style: italic;
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: 8;
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.VIDEO {
-  grid-area: "VIDEO";
-  justify-content: center;
-}
-
-.VIDEO video {
-  width: 50%;
-  height: 80%;
-  align-items: center;
-}
-
-.PARRAFO {
+main h2 {
+  background-color: black;
+  background-size: contain;
+  color: white;
+  text-indent: 30%;
+  border-style: double;
+  border-radius: 10px;
+  text-shadow: 1px 1px yellow;
   font-style: oblique;
-  transition: height 2s;
+  font-size: xx-large;
+  border-color: red;
 }
-
-.PARRAFO p {
-  align-items: center;
-  border-radius: 1px;
-  border-color: blue;
-  font-size: 20px;
-  height: 60%;
-}
-
-.PARRAFO p:hover {
-  height: 200px;
-}
-
-.MARCAS img {
-  align-items: initial;
-  height: 80%;
-  width: 60%;
-  transition: height 2s, width 1s;
-}
-
-.MARCAS img:hover {
-  height: 90%;
-  width: 75%;
-}
-
-/* listas */
-footer {
-  list-style: none;
-  background-color: yellow;
-  background-image: linear-gradient(to left green yellow);
+main div {
+  /*esta es la row*/
   display: flex;
-  justify-content: right;
-  height: 75px;
+  justify-content: space-between;
+  align-content: center;
+}
+main div div {
+  width: fit-content;
+  height: 400px;
+  padding: 100px 0px 5px 0px;
+  display: block;
+}
+main div div h3 {
+  background-color: black;
+  border-color: tomato;
+  border-style: groove;
+  border-radius: 10px;
+  text-indent: 30%;
+  background-image: -webkit-radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+  color: yellow;
+}
+main div div video {
+  justify-content: center;
   width: auto;
+  height: 80%;
+  padding-left: 110px;
+  border-style: none;
+  border-radius: 30px;
 }
-footer nav ul {
-  list-style: none;
+main div div {
+  padding: 50px 0px 0px 0px;
+}
+main div div img {
+  align-items: initial;
+  height: 90%;
+  width: 70%;
+  border-radius: 20px;
+  transition: height 2s, width 2s;
+}
+main div div img:hover {
+  height: 90%;
+  width: 90%;
+}
+
+footer {
+  background-color: black;
+  border: solid tomato;
+  border-radius: 50px;
+  width: 100%;
+  height: 150px;
+}
+footer div nav {
   display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
-footer nav ul li img {
-  transform: translate(10px, 20px);
-  width: 40%;
-  height: 60%;
+footer div nav div {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+footer div nav div iframe {
+  border-radius: 20px;
+  justify-items: center;
+  width: 100%;
+  height: 70%;
+  transition: height 2s, width 2s;
+}
+footer div nav div iframe:hover {
+  height: 100%;
+  width: 100%;
+}
+footer div nav div ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 20px;
+  justify-items: right;
+  list-style: none;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+@media only screen and (max-width: 465px) {
+  footer div nav div ul {
+    display: block;
+  }
 }
 
-/*Creamos el bucle para usar los valores del mapa*/
-.btn--facebook {
-  background-color: #3a5795;
+.btn {
+  width: 50%;
+  height: 50%;
+  justify-items: center;
+  align-items: center;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 95px;
 }
-
-.btn--send-mail {
-  background-color: #C25E30;
-}
-
-/*variables generales*/
 
 /*# sourceMappingURL=style.css.map */
