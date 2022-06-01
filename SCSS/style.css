@@ -1,0 +1,210 @@
+/*nesting o anidamiento*/
+/*header*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div header {
+  background-color: black;
+  border-radius: 10px;
+}
+
+div header h1 {
+  background-color: tomato;
+  width: 100%;
+  font-style: arial;
+  color: black;
+  justify-items: center;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: 8;
+          animation-iteration-count: 8;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+div header div {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+div header div nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 60px;
+}
+
+div header div nav div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30%;
+  height: auto;
+  border-radius: 50px;
+}
+
+div header div nav div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div header div nav div ul li a {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 1.5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-weight: bolder;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal {
+  padding: 10px;
+}
+
+.principal main {
+  background-color: white;
+  padding-top: 60px;
+}
+
+.principal main h2 {
+  background-color: tomato;
+  border-style: solid;
+  border-radius: 10px;
+  text-shadow: 1px 1px yellow;
+  font-style: oblique;
+  font-size: xx-large;
+  border-color: red;
+  justify-items: center;
+}
+
+.principal main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.principal main div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.principal main div div div video {
+  width: 50%;
+  height: 50%;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.principal main div div div img {
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  height: 80%;
+  width: 60%;
+  -webkit-transition: height 2s, width 1s;
+  transition: height 2s, width 1s;
+  border-radius: 10px;
+}
+
+.principal main div div div img:hover {
+  height: 90%;
+  width: 75%;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .footer {
+  background-color: white;
+  width: auto;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .footer div div ul {
+  width: 30%;
+  height: auto;
+}
+
+section .footer div div ul li {
+  width: 30%;
+  height: auto;
+  list-style: none;
+}
+
+section .footer div div ul li img {
+  inline-size: 50%;
+}
+
+section .footer div div ul li .wup {
+  border-radius: 2px;
+  border: solid;
+}
+/*# sourceMappingURL=style.css.map */

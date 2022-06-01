@@ -1,107 +1,118 @@
-/*main logo  + titulo */
+@import '../base/colores';
+
 main{
-    div{
+    height: 100%;
+    width: auto;
+    background-color: $bg-color;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding: 20px 5px 10px 5px;
+    h2{
+        background-color: $bg-color;
+        background-size: contain;
+        color: $ter-color;
+        text-indent: 10%;
+        border-style: double;
+        border-radius: 10px;
+        text-shadow: 1px 1px yellow;
+        font-style: oblique;
+        font-size: xx-large;
+        border-color: red;
+    }
+    
+    div{ 
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
         div{
-            img{
+            width: fit-content;
+            height: 300px;
+            padding: 100px 0px 5px 0px;
+            display: block;
+            justify-content: center;
+            h3{
+                text-justify: auto;
+                background-color: $bg-color;
+                border-color: $pri-color;
+                border-style: groove;
+                border-radius: 10px;
+                background-image: -webkit-radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+                color: $cua-color;
+            }
+            video{
+                justify-content: center;
                 width: auto;
-                height: 85%;
-                justify-items: flex-start;
+                height: 80%;
+                padding-left: 100px;
+                border-style: none;
+                border-radius: 30px;
             }
         }
-    div{
         div{
-            background-color: yellow;
-            height: 100px;
-            width: 80%;
-            animation-name: titulo;
-            animation-duration: 4s;
-            @keyframes titulo {
-                0% {background-color: red}
-                25%{background-color: green;}
-                50%{background-color: blue;}
-                100%{background-color: yellow;}
-                
-            }
-            p{
-                text-align: center;
+            padding: 50px 0px 0px 0px;
+            img{
                 align-items: center;
-                font-style: italic;
-                animation-name: aparecer;
-                animation-duration: 2s;
-                animation-iteration-count: 8;
-                @keyframes aparecer {
-                    0%{opacity: 0;}
-                    50%{opacity: 0.5;}
-                    100%{opacity: 1;}
+                height: 90%;
+                width: 80%;
+                border-radius: 20px;
+                transition: height 2s, width 2s;
+                &:hover{
+                    height: 80%;
+                    width: 85%;
                 }
             }
         }
     }
-    }
 }
-.LOGO { 
-    background-color: yellow;
-    height: 100px;
+.nov-img{
+
+    height: 70%;
 }
-.LOGO img{
+.register{
+    height: 80%;
     width: auto;
-    height: 85%;
-    justify-items: flex-start;
+    background-color: $bg-color;
+    margin-top: 100px;
+    padding: 10px;
+    padding: 20px 5px 10px 0px;
+    div{
+        display: block;
+        div{
+            h2{
+            background-color: $bg-color;
+            width: 100%;
+            color: $ter-color;
+            justify-content: center;
+            border-style: double;
+            border-radius: 10px;
+            text-shadow: 1px 1px yellow;
+            font-style: oblique;
+            font-size: xx-large;
+            border-color: red;
+            }
+        }
+        form{
+            justify-content: center;
+            div{
+                display: flex;
+                div{
+                    display: block;
+                }
+                div{
+                    img{
+                        height: 80%;
+                        width: auto;
+                    }
+                }
+            }
+            div{
+                button{
+                    margin-top: 20%;
+                    height: 20%;
+                    width: 100px;
+                    justify-content: center;
+                }
+            }
+        }
+    }            
 }
-.TITULO { 
-    background-color: yellow;
-    height: 100px;
-    width: 80%;
-    animation-name: titulo;
-    animation-duration: 4s;
-}
-@keyframes titulo {
-    0%   {background-color: red;}
-    25%  {background-color: green;}
-    50%  {background-color: blue;}
-    100% {background-color: yellow;}
-}
-.TITULO p{
-    text-align: center;
-    align-items: center;
-    font-style: italic;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: 8;
-}
-@keyframes aparecer {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
- .VIDEO { grid-area: "VIDEO"; 
-    justify-content: center;   
-}
-.VIDEO video{
-    width: 50%;
-    height: 80%;
-    align-items: center;
-}
-.PARRAFO { 
-    font-style: oblique;
-    transition: height 2s;
- }
-.PARRAFO p{
-     align-items: center;
-     border-radius: 1px;
-     border-color: blue;
-     font-size: 20px;
-     height: 60%;
- }
-.PARRAFO p:hover {
-    height: 200px;
- }
-.MARCAS img{
-    align-items: initial;
-    height: 80%;
-    width: 60%;
-    transition: height 2s, width 1s;
-}
-.MARCAS img:hover {
-    height: 90%;
-    width: 75%;
- }

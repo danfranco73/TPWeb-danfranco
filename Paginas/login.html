@@ -9,7 +9,7 @@
         <link rel="shorcut icon" href="../Imagenes/LogoRTP.jpg">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
-        <title>Todopymes Mayorista | Novedades</title>
+        <title>Todopymes Mayorista | Login</title>
     </head>
     <body>
         <div class="container-fluid">
@@ -18,7 +18,7 @@
                 <div class="row">
                     <nav>
                         <div class="col-sm-3">
-                            <a href="#" class="logo"><img src="../imagenes/LogoRTP.jpg" alt="Logo"></a>
+                            <a href="#" class="logo"><img src="../Imagenes/LogoRTP.jpg" alt="Logo"></a>
                         </div> 
                         <div class="col-sm-8">  
                             <ul>
@@ -31,49 +31,48 @@
                         </div>
                     </nav>
                 </div>
-            </header>         
-            <main class="bg-novedades">
-                <h2>"Nuevos ingresos: BODEGA LOS YUROS"</h2>
-                <div class="row">
+            </header>    
+            <main>
+                <h2>"Acceso a las Mejores Marcas"</h2>
+                <div class="row login">
                     <div class="col-sm-4">
-                        <div>
-                            <img class="nov-img"
-                            src="../imagenes/Vinos.jpeg" alt="Foto Vinos">
-                            <h3>Los Mejores Vinos</h3>
-                        </div>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="USUARIO">USUARIO:</label>
+                                <input type="USUARIO" class="form-control" id="USUARIO" placeholder="INGRESE SU USUARIO" name="USUARIO">
+                                <label for="CLAVE">CLAVE:</label>
+                                <input type="CLAVE" class="form-control" id="CLAVE" placeholder="Ingrese CLAVE ASIGNADA" name="CLAVE">
+                                <button type="submit btn-success log-btn">
+                                    INGRESAR
+                                </button>
+                            </div>
+                            
+                        </form>
                     </div>
-                    <div class="col-sm-4">    
-                        <div>  
-                            <img class="nov-img" src="../imagenes/cervezas.jpg" alt="cervezas">
-                            <h3>Disfrutá  de una Buena Cerveza</h3>  
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div>  
-                            <img class="nov-img" src="../imagenes/aguas.jpg" alt="aguas">
-                            <h3>Refrescate</h3>
-                        </div>
+                    <div class="col-sm-8 MARCAS">
+                        <a href="marcas.html"target="_blanck"><img src="../Imagenes/marcas.jpg" alt=""></a>
                     </div>
                 </div>
-            </main>
+            </main>    
+            <!--Footer de la pagina-->
             <footer>
                 <div class="row">
                     <nav>
                         <div class="col-sm-8">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.4264346511827!2d-64.25246058537232!3d-27.796641937340098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b535bcc4a05bb%3A0x4adea6c0e37a22d5!2sTodopymes!5e0!3m2!1ses!2sar!4v1653393955488!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        
+                    
                         </div>
                         <div class="col-sm-4">
                             <ul>
-                                <li><a href="https://www.facebook.com/todopymesmayorista"target="_blanck"><img class="btn" src="../imagenes/facebook.png" alt=""></a></li>
-                                <li><a href="https://goo.gl/maps/eTJFUfzbj5PtFTpu6"target="_blanck"><img class="btn" src="../imagenes/logogooglemaps.png" alt=""></a></li>
-                                <li><a href="https://web.whatsapp.com/"target="_blanck"><img class="btn" src="../imagenes/logowhatsapp.jpg" alt=""></a></li>
+                                <li><a href="https://www.facebook.com/todopymesmayorista"target="_blanck"><img class="btn" src="../Imagenes/facebook.png" alt=""></a></li>
+                                <li><a href="https://goo.gl/maps/eTJFUfzbj5PtFTpu6"target="_blanck"><img class="btn" src="../Imagenes/logogooglemaps.png" alt=""></a></li>
+                                <li><a href="https://web.whatsapp.com/"target="_blanck"><img class="btn" src="../Imagenes/logowhatsapp.jpg" alt=""></a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        </div>
+        </div>    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

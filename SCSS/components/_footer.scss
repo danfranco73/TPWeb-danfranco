@@ -1,24 +1,58 @@
-@import '../base/mixin';
+@import '../base/colores';
 
 footer{
-    list-style: map-get($estilos, list-style);
-    background-color: map-get($estilos, background-color );
-    background-image: linear-gradient(to left green yellow);
-    display: flex;
-    justify-content: right;
-    @include sizes(auto, 75px);
-    nav{
-        ul{
-            list-style: none;
+    background-color: $bg-color;
+    border: solid $pri-color;
+    border-radius: 50px;
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    div{ 
+        nav{
             display: flex;
-            li{
-                img{
-                    transform: translate(10px, 20px);
-                    width: 40%;
-                    height: 60%;
+            list-style: none;
+            justify-content: space-between;
+            @media only screen and (max-width: 480px){
+                display: block;
+            }
+            div{
+                padding-top: 15px;
+                padding-left: 10px;
+                iframe{
+                    border-radius: 20px;
+                    justify-items: center;
+                    width: 100%;
+                    height: 70%;
+                    transition: height 2s, width 2s;
+                    &:hover{
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
-
+            }
+            div{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    padding-top: 20px;
+                    justify-items: right;
+                    list-style: none;
+                    align-items: center;
+                    width: auto;
+                    height: auto;
+                    
+                }
             }
         }
     }
+}
+.btn{
+    width: 50%;
+    height: 50%;
+    justify-items: center;
+    align-items: center;
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    border-radius:95px;
 }

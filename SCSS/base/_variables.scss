@@ -1,5 +1,7 @@
-/*variables generales*/
+$borde: solid 1px yellow;
+$limint: 10;
+$unit: 7px;
 
-$bg-col-gral: yellow;
-$font-size: 22px;
-$width-header:150px;
+@function size($value){
+    @return $value * $unit
+}

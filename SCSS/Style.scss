@@ -1,8 +1,8 @@
 /*nesting o anidamiento*/
-@import 'components/_header';
-@import 'components/_main';
-@import 'base/_listas';
+@import 'components/header';
+@import 'components/main';
 @import 'components/footer';
-@import 'base/_mapas';
-@import 'base/_variables';
-@import 'base/mixin';
+
+@import 'base/colores';
+@import 'base/variables';
+
