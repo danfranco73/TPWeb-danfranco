@@ -201,6 +201,7 @@ main div div img:hover {
 .register div form div div img {
   height: 80%;
   width: auto;
+  justify-content: left;
 }
 .register div form div button {
   margin-top: 20%;
