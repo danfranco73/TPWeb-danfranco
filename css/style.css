@@ -1,18 +1,211 @@
-/* Error: expected "{".
- *    ,
- * 46 | >>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
- *    |                                                 ^
- *    '
- *   scss\components\_header.scss 46:49  @import
- *   scss\style.scss 2:9                 root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 46 \2502  >>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1\d\a    \2502                                                  ^\a    \2575 \a   scss\\components\\_header.scss 46:49  @import\a   scss\\style.scss 2:9                 root stylesheet';
+/*nesting o anidamiento*/
+/*header*/
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/*sass del index*/
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body div header {
+  height: 90px;
+  background-color: black;
+  border-radius: 10px;
+}
+body div header h1 {
+  background-color: black;
+  width: 100%;
+  font-style: arial;
+  text-indent: 25%;
+  color: white;
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: 8;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body div header div {
+  position: sticky;
+}
+body div header div nav {
+  display: flex;
+  width: auto;
+  height: 50px;
+}
+body div header div nav div img {
+  object-fit: contain;
+  width: 30%;
+  height: auto;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 50px;
+}
+body div header div nav div ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+body div header div nav div ul li a {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 1.5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-weight: bolder;
+}
+body div header div nav div ul li a img {
+  width: 20%;
+  height: 20%;
+}
+
+main {
+  /*main del proyecto*/
+  background-color: black;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  padding: 20px 5px 10px 5px;
+  /*Titulo del Principal*/
+  /*contenido principal*/
+}
+main h2 {
+  background-color: black;
+  background-size: contain;
+  color: white;
+  text-indent: 30%;
+  border-style: double;
+  border-radius: 10px;
+  text-shadow: 1px 1px yellow;
+  font-style: oblique;
+  font-size: xx-large;
+  border-color: red;
+}
+main div {
+  /*esta es la row*/
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+main div div {
+  width: fit-content;
+  height: 400px;
+  padding: 100px 0px 5px 0px;
+  display: block;
+}
+main div div h3 {
+  background-color: black;
+  border-color: tomato;
+  border-style: groove;
+  border-radius: 10px;
+  text-indent: 30%;
+  background-image: -webkit-radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+  color: yellow;
+}
+main div div video {
+  justify-content: center;
+  width: auto;
+  height: 80%;
+  padding-left: 110px;
+  border-style: none;
+  border-radius: 30px;
+}
+main div div {
+  padding: 50px 0px 0px 0px;
+}
+main div div img {
+  align-items: initial;
+  height: 90%;
+  width: 70%;
+  border-radius: 20px;
+  transition: height 2s, width 2s;
+}
+main div div img:hover {
+  height: 90%;
+  width: 90%;
+}
+
+.nov-img {
+  height: fit-content;
+  justify-content: center;
+}
+
+footer {
+  background-color: black;
+  border: solid tomato;
+  border-radius: 50px;
+  margin-top: 50px;
+  width: 100%;
+  height: 150px;
+}
+footer div nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 465px) {
+  footer div nav {
+    display: block;
+  }
+}
+footer div nav div {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+footer div nav div iframe {
+  border-radius: 20px;
+  justify-items: center;
+  width: 100%;
+  height: 70%;
+  transition: height 2s, width 2s;
+}
+footer div nav div iframe:hover {
+  height: 100%;
+  width: 100%;
+}
+footer div nav div ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 20px;
+  justify-items: right;
+  list-style: none;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+@media only screen and (max-width: 465px) {
+  footer div nav div ul {
+    display: block;
+  }
+}
+
+.btn {
+  width: 50%;
+  height: 50%;
+  justify-items: center;
+  align-items: center;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 95px;
+}
+
+/*poner esto bien*/
+
+/*# sourceMappingURL=style.css.map */
