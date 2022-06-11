@@ -12,7 +12,11 @@ footer{
             display: flex;
             list-style: none;
             justify-content: space-between;
+<<<<<<< HEAD
             @media only screen and (max-width: 480px){
+=======
+            @media only screen and (max-width: 465px){
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
                 display: block;
             }
             div{
@@ -41,7 +45,13 @@ footer{
                     align-items: center;
                     width: auto;
                     height: auto;
+<<<<<<< HEAD
                     
+=======
+                    @media only screen and (max-width: 465px){
+                        display: block;
+                    }
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
                 }
             }
         }

@@ -1,5 +1,6 @@
 @import '../base/colores';
 
+<<<<<<< HEAD
 main{
     height: 100%;
     width: auto;
@@ -7,11 +8,23 @@ main{
     margin-top: 100px;
     margin-bottom: 80px;
     padding: 20px 5px 10px 5px;
+=======
+main{/*main del proyecto*/
+    background-color: $bg-color;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 20px 5px 10px 5px;
+    /*Titulo del Principal*/
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
     h2{
         background-color: $bg-color;
         background-size: contain;
         color: $ter-color;
+<<<<<<< HEAD
         text-indent: 10%;
+=======
+        text-indent: 30%;
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
         border-style: double;
         border-radius: 10px;
         text-shadow: 1px 1px yellow;
@@ -19,23 +32,39 @@ main{
         font-size: xx-large;
         border-color: red;
     }
+<<<<<<< HEAD
     
     div{ 
+=======
+    /*contenido principal*/
+    div{ /*esta es la row*/
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
         display: flex;
         justify-content: space-between;
         align-content: center;
         div{
             width: fit-content;
+<<<<<<< HEAD
             height: 300px;
             padding: 100px 0px 5px 0px;
             display: block;
             justify-content: center;
             h3{
                 text-justify: auto;
+=======
+            height: 400px;
+            padding: 100px 0px 5px 0px;
+            display: block;
+            h3{
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
                 background-color: $bg-color;
                 border-color: $pri-color;
                 border-style: groove;
                 border-radius: 10px;
+<<<<<<< HEAD
+=======
+                text-indent: 30%;
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
                 background-image: -webkit-radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
                 color: $cua-color;
             }
@@ -43,7 +72,11 @@ main{
                 justify-content: center;
                 width: auto;
                 height: 80%;
+<<<<<<< HEAD
                 padding-left: 100px;
+=======
+                padding-left: 110px;
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
                 border-style: none;
                 border-radius: 30px;
             }
@@ -51,6 +84,7 @@ main{
         div{
             padding: 50px 0px 0px 0px;
             img{
+<<<<<<< HEAD
                 align-items: center;
                 height: 90%;
                 width: 80%;
@@ -59,12 +93,23 @@ main{
                 &:hover{
                     height: 80%;
                     width: 85%;
+=======
+                align-items: initial;
+                height: 90%;
+                width: 70%;
+                border-radius: 20px;
+                transition: height 2s, width 2s;
+                &:hover{
+                    height: 90%;
+                    width: 90%;
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
                 }
             }
         }
     }
 }
 .nov-img{
+<<<<<<< HEAD
 
     height: 70%;
 }
@@ -117,3 +162,10 @@ main{
         }
     }            
 }
+=======
+    height: fit-content;
+    justify-content: center;
+    
+}
+
+>>>>>>> d2c260b8bc0ae978658e9265a7f9ef1f2a60d2c1
