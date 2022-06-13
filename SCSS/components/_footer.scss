@@ -31,6 +31,7 @@ footer{
                 }
             }
             div{
+               
                 ul{
                     display: flex;
                     justify-content: space-between;
@@ -41,9 +42,7 @@ footer{
                     align-items: center;
                     width: auto;
                     height: auto;
-                    @media only screen and (max-width: 465px){
-                        display: block;
-                    }
+                    
                 }
             }
         }
@@ -58,4 +57,3 @@ footer{
     -webkit-border-radius:30px;
     border-radius:95px;
 }
-/*poner esto bien*/

@@ -19,6 +19,7 @@ body div header h1 {
   background-color: black;
   width: 100%;
   font-style: arial;
+  margin: auto;
   text-indent: 25%;
   color: white;
   animation-duration: 4s;
@@ -31,6 +32,12 @@ body div header h1 {
   }
   100% {
     opacity: 1;
+  }
+}
+@media (max-width: 780px) {
+  body div header h1 {
+    text-indent: none;
+    font-size: 80%;
   }
 }
 body div header div {
@@ -80,10 +87,19 @@ main {
   /*main del proyecto*/
   background-color: black;
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 90px;
   padding: 20px 5px 10px 5px;
+  display: flex;
   /*Titulo del Principal*/
   /*contenido principal*/
+}
+@media (max-width: 780px) {
+  main {
+    display: block;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
 }
 main h2 {
   background-color: black;
@@ -103,6 +119,11 @@ main div {
   justify-content: space-between;
   align-content: center;
 }
+@media (max-width: 780px) {
+  main div {
+    display: block;
+  }
+}
 main div div {
   width: fit-content;
   height: 400px;
@@ -120,9 +141,8 @@ main div div h3 {
 }
 main div div video {
   justify-content: center;
-  width: auto;
+  width: 50%;
   height: 80%;
-  padding-left: 110px;
   border-style: none;
   border-radius: 30px;
 }
@@ -140,6 +160,13 @@ main div div img:hover {
   height: 90%;
   width: 90%;
 }
+@media (max-width: 780px) {
+  main div div img:hover {
+    height: 50%;
+    width: 40%;
+    align-items: center;
+  }
+}
 
 .nov-img {
   height: fit-content;
@@ -154,41 +181,48 @@ footer {
   width: 100%;
   height: 150px;
 }
-footer div nav {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
-@media only screen and (max-width: 465px) {
-  footer div nav {
+@media (max-width: 780px) {
+  footer div {
     display: block;
   }
-}
-footer div nav div {
-  padding-top: 15px;
-  padding-left: 10px;
-}
-footer div nav div iframe {
-  border-radius: 20px;
-  justify-items: center;
-  width: 100%;
-  height: 70%;
-  transition: height 2s, width 2s;
-}
-footer div nav div iframe:hover {
-  height: 100%;
-  width: 100%;
-}
-footer div nav div ul {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  padding-top: 20px;
-  justify-items: right;
-  list-style: none;
-  align-items: center;
-  width: auto;
-  height: auto;
+  footer div nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+  footer div div {
+    padding-top: 15px;
+    padding-left: 10px;
+    object-fit: contain;
+  }
+  footer div div iframe {
+    border-radius: 20px;
+    justify-items: center;
+    width: 100%;
+    height: 70%;
+    transition: height 2s, width 2s;
+  }
+  footer div div iframe:hover {
+    height: 100%;
+    width: 100%;
+  }
+  footer div div ul {
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 20px;
+    justify-items: right;
+    list-style: none;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  footer div div ul li a {
+    height: 120%;
+    width: 120%;
+  }
 }
 
 .btn {
@@ -201,4 +235,4 @@ footer div nav div ul {
   border-radius: 95px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sytle.css.map */
