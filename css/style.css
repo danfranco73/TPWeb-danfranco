@@ -114,7 +114,7 @@ main div div h3 {
   border-color: tomato;
   border-style: groove;
   border-radius: 10px;
-  text-indent: 30%;
+  text-justify: center;
   background-image: -webkit-radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
   color: yellow;
 }
@@ -142,8 +142,12 @@ main div div img:hover {
 }
 
 .nov-img {
-  height: fit-content;
+  height: 300px;
   justify-content: center;
+}
+
+.bg-novedades {
+  margin-bottom: 150;
 }
 
 footer {
